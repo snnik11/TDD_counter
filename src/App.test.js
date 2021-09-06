@@ -32,5 +32,7 @@ test("counter starts at 0", ()=>{
 })
 
 test("click button to increment counter", () =>{
-
+  const wrapper = shallow(<App/>)
+  const countOnClick = wrapper.find("[data-test='component-count-onClick");
+  expect(countOnClick.length).toBe(1)
 })
